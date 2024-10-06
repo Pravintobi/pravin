@@ -1,0 +1,101 @@
+/* Global font settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 100px 50px;
+    text-align: center;
+    color: #fff;
+    opacity: 0; /* Hide initially */
+    transform: translateY(50px); /* Move elements downwards initially */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Scroll-triggered animations */
+.section.visible {
+    opacity: 1; /* Reveal when visible */
+    transform: translateY(0); /* Slide up to normal position */
+}
+
+/* Different section styles (same as before) */
+.intro-section {
+    background-color: #282e3d; /* Dark gray */
+}
+
+.creativity-section {
+    background-color: #a17794; /* Soft pink/purple */
+    position: relative;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.opportunity-section {
+    background-color: #ff9f80; /* Light coral */
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.user-interface-section {
+    background-color: #7ca982; /* Soft green */
+    position: relative;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.seo-section {
+    background-color: #0e0f1f; /* Deep blue */
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.load-time-section {
+    background-color: #243447; /* Darker blue */
+    position: relative;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.navigation-section {
+    background-color: #556677; /* Grayish-blue */
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Headings with decorative font */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+/* Specific font sizes and styles */
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* First letter styling for headers and paragraphs */
+h1::first-letter, h2::first-letter, h3::first-letter, p::first-letter {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: #f4e5d3;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+/* Body text style */
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}

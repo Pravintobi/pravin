@@ -1,0 +1,148 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.info {
+    width: 45%;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: silver;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn.videos {
+    background-color: red;
+}
+
+.btn.books {
+    background-color: orange;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* Awards Section */
+.awards {
+    padding: 50px;
+    text-align: center;
+}
+
+.award-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.award {
+    width: 22%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f04;
+}

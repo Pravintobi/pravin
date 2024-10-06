@@ -1,0 +1,55 @@
+/* CSS reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a69ac); /* Gradient background */
+    color: #fff; /* White text color */
+}
+
+.countdown-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    transition: transform 0.5s ease; /* Smooth scaling effect */
+}
+
+/* Countdown display styling */
+#display {
+    font-size: 8rem; /* Large font size for countdown numbers */
+    font-weight: bold; /* Bold font */
+    animation: fade-in 1s; /* Animation effect for fading in */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Message styling */
+h1 {
+    margin-top: 20px; /* Margin for spacing */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #display {
+        font-size: 5rem; /* Smaller font size on smaller screens */
+    }
+}

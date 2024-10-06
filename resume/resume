@@ -1,0 +1,80 @@
+const resume = {
+  "name": "John Doe",
+  "contact": {
+    "email": "johndoe@example.com",
+    "phone": "+1-123-456-7890",
+    "address": "123 Main St, Springfield, USA"
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Springfield University",
+      "year": 2020
+    },
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "Springfield University",
+      "year": 2022
+    }
+  ],
+  "experience": [
+    {
+      "jobTitle": "Software Developer",
+      "company": "Tech Solutions",
+      "years": "2020-2021",
+      "responsibilities": [
+        "Developed web applications using React and Node.js.",
+        "Worked with RESTful APIs and database management."
+      ]
+    },
+    {
+      "jobTitle": "Data Analyst",
+      "company": "DataCorp",
+      "years": "2021-2023",
+      "responsibilities": [
+        "Analyzed large datasets using Python and SQL.",
+        "Generated reports to provide insights to stakeholders."
+      ]
+    }
+  ],
+  "skills": ["JavaScript", "Python", "SQL", "React", "Node.js"],
+  "projects": [
+    {
+      "title": "E-commerce Website",
+      "description": "Built a full-stack e-commerce platform using the MERN stack."
+    },
+    {
+      "title": "Data Analysis Dashboard",
+      "description": "Developed an interactive data analysis dashboard with D3.js and Python."
+    }
+  ]
+};
+
+// Iterating over the resume object using for...in loop
+console.log("Personal Information:");
+for (let key in resume.contact) {
+  console.log(`${key}: ${resume.contact[key]}`);
+}
+
+console.log("\nEducation:");
+for (let i = 0; i < resume.education.length; i++) {
+  console.log(`${resume.education[i].degree} from ${resume.education[i].institution}, Year: ${resume.education[i].year}`);
+}
+
+console.log("\nExperience:");
+for (let i = 0; i < resume.experience.length; i++) {
+  console.log(`${resume.experience[i].jobTitle} at ${resume.experience[i].company} (${resume.experience[i].years})`);
+  for (let responsibility of resume.experience[i].responsibilities) {
+    console.log(` - ${responsibility}`);
+  }
+}
+
+console.log("\nSkills:");
+for (let skill of resume.skills) {
+  console.log(skill);
+}
+
+console.log("\nProjects:");
+for (let project of resume.projects) {
+  console.log(`Title: ${project.title}, Description: ${project.description}`);
+}

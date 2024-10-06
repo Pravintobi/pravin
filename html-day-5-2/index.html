@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling UI Design</title>
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        // Function to detect if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                   rect.bottom >= 0;
+        }
+    
+        // Function to add the 'visible' class when in the viewport
+        function revealOnScroll() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+    
+        // Trigger animation on page load and scroll
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+    </script>
+    
+</head>
+<body>
+    <div class="section intro-section">
+        <h1>Scrolling in Web Design</h1>
+        <h2>The Long & The Short of It</h2>
+    </div>
+
+    <div class="section creativity-section">
+        <h3>LONG SCROLL: THE GOOD STUFF</h3>
+        <p>VISUAL CREATIVITY</p>
+         <p>There’s more visual freedom in parallax website design. Rather than focusing on block style information architecture, you can create refreshing and engaging visuals such as animations or beautiful photography, that act as a continuum, ultimately inspiring users to scroll further down the page</p>
+    </div>
+
+    <div class="section opportunity-section">
+        <h3>STORY-TELLING OPPORTUNITIES</h3>
+        <p>Do you want to tell a story with your product or service? Long-scrolling lends itself well to a narrative and encourages meaningful interaction from users.
+        </p>
+    </div>
+
+    <div class="section user-interface-section">
+        <h3>SIMPLE INTERFACE FOR SMART DEVICE USERS</h3>
+        <p>Mobiles and tablets have evolved the way we engage in websites. It’s now less about clicking and more about scrolling, swiping and tapping. Long-scrolling websites take away the barrier of complex navigation, providing a responsive, user-friendly experience for mobile users.</p>
+    </div>
+
+    <div class="section seo-section">
+        <h3>PUNCHY, STRAIGHT TO THE POINT MESSAGING</h3>
+        <p>Parallax website design is a great solution for us time-poor website browsers, as it forces businesses to convey their message and vision into one dynamic web design page.
+
+        </p>
+    </div>
+
+    <div class="section load-time-section">
+        <h3>EASIER FOR USERS TO REALISE THEIR GOAL</h3>
+        <p>These days, scrolling is so simple that it’s become an instinctive action, whereas clicking through to another page requires thought and motivation. A single page website allows user to identify their purpose on the website quicker, than needing to sift through multiple pages.</p>
+    </div>
+
+    <div class="section navigation-section">
+        <h3>LONG SCROLL: THE NOT SO GOOD STUFF</h3>
+        <p>YOU NEED TO BE SEARCH ENGINE SAVVY</p>
+        <p>One of the biggest problems that parallax websites face is that they are not SEO friendly. Why? When you limit the number of pages on your website, Google has fewer pages to index and negatively impacts your standing on the search engine results page (SERP). Luckily there are ways around this.
+        </p>
+    </div>
+
+</body>
+</html>
